@@ -83,6 +83,12 @@ git checkout -- filename.txt
 // to go to previous commit from modified statged
 git checkout -f
 
+//to make a short cut  command of a long command
+git config --global alias.st status (for example here git st will mean git status)
+git config --global alias.unstage 'restore --staged--' (to unsatge a file)
+git config --global alias.last 'log -p -1'  (to see last commit)
+
+
 
 ...............<GitHub>..............................
 (pull: code send github to our local system)
@@ -98,3 +104,7 @@ git remote add origin {github urls}
 
 //to see which url is used for push and poll
 git remote -v
+
+// to push something on git
+git branch -M main (only for the first time)
+git push -u origin  main
